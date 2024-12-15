@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "name":"Brand",
+        "link":""
+    },{
+        "id":3,
+        "name":"Shopify",
+        "link":""
+    },{
+        "id":4,
+        "name":"Products",
+        "link":""
+    },{
+        "id":5,
+        "name":"XR Store",
+        "link":""
+    },{
+        "id":6,
+        "name":"Analytics",
+        "link":""
+    },{
+        "id":7,
+        "name":"Billing",
+        "link":""
+    }
+    ,{
+        "id":8,
+        "name":"Profile",
+        "link":""
+    }
+]
