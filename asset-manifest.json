@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/strategy/static/css/main.4cdb595e.css",
+    "main.js": "/strategy/static/js/main.39e4a259.js",
+    "static/media/company-icon.png": "/strategy/static/media/company-icon.3ec710fb4707d880e821.png",
+    "index.html": "/strategy/index.html",
+    "main.4cdb595e.css.map": "/strategy/static/css/main.4cdb595e.css.map",
+    "main.39e4a259.js.map": "/strategy/static/js/main.39e4a259.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cdb595e.css",
+    "static/js/main.39e4a259.js"
+  ]
+}
