@@ -3,7 +3,7 @@ import { useState } from "react";
 import { getUser, createUser } from "../../actions/utils";
 import InputField from "../atoms/input-field";
 
-export default function Login({ setIsAuthenticated }) {
+export default function Login({ setIsAuthenticated , setUserData }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -17,6 +17,7 @@ export default function Login({ setIsAuthenticated }) {
       }
       if (user.password === password) {
         setIsAuthenticated(true);
+        setUserData(user.username);
       } else {
         alert("Incorrect password. Please try again.");
       }
@@ -38,7 +39,7 @@ export default function Login({ setIsAuthenticated }) {
           username: username,
           password: password,
         };
-        const cret = await createUser(content);
+        await createUser(content);
         alert("Signup successful! You can now log in.");
       }
     } catch (error) {
