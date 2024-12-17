@@ -1,14 +1,11 @@
 import React from "react";
 import { useState } from "react";
-import { Router, Route } from "react-router";
-import { getUser, createUser } from "../actions/utils";
-import MainPage from "./home";
-import InputField from "../components/atoms/input-field";
+import { getUser, createUser } from "../../actions/utils";
+import InputField from "../atoms/input-field";
 
 export default function Login({ setIsAuthenticated }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isAuthenticated , setAuthenticated] = useState(setIsAuthenticated);
 
   const handleLogin = async () => {
     try {
@@ -19,13 +16,7 @@ export default function Login({ setIsAuthenticated }) {
         return;
       }
       if (user.password === password) {
-        setAuthenticated(true);
-        <Router>
-          <Route
-          path="/main"
-          element={isAuthenticated ? <MainPage /> : <Login setIsAuthenticated={setIsAuthenticated} setUsername={setUsername} />}
-        />
-        </Router>
+        setIsAuthenticated(true);
       } else {
         alert("Incorrect password. Please try again.");
       }
@@ -48,7 +39,6 @@ export default function Login({ setIsAuthenticated }) {
           password: password,
         };
         const cret = await createUser(content);
-        console.log(cret);
         alert("Signup successful! You can now log in.");
       }
     } catch (error) {

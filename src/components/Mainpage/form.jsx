@@ -1,5 +1,4 @@
-import { Aside, Form } from "../components";
-
+import {Aside , Form} from '../index'
 export default function Home() {
   return (
     <div className="bg-black grid grid-cols-[30%_60%]">
