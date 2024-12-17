@@ -4,11 +4,12 @@ import {Header ,Home ,Login} from "./components";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [username, setUsername] = useState("user");
+  const [username, setUserData] = useState("");
+
   return (
     <div>
       <Header username={username} isAuthenticated={isAuthenticated} />
-      {isAuthenticated ? <Home /> : <Login setIsAuthenticated={setIsAuthenticated} setUsername={setUsername} />}
+      {isAuthenticated ? <Home username={username}/> : <Login setIsAuthenticated={setIsAuthenticated} setUserData={setUserData} />}
     </div>
   );
 };

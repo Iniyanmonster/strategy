@@ -9,3 +9,8 @@ export async function getUser(){
     const response = await databases.listDocuments('675e5dd900187cb7da1e','675e5de600381f0f854e')
     return response.documents;
 }
+
+export async function updateUser(documentID ,formData){
+    const response = await databases.updateDocument('675e5dd900187cb7da1e','675e5de600381f0f854e' , documentID,formData )
+    return response;
+}
