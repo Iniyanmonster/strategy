@@ -1,9 +1,9 @@
 export async function getProducts() {
-    const response = await fetch('https://seq1iq-ss.myshopify.com/api/2024-10/graphql.json' ,{
+    const response = await fetch(process.env.REACT_APP_SHOPIFY_URL ,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'X-Shopify-Storefront-Access-Token': '7f4215fea429b4537811999031e8c6fa',
+            'X-Shopify-Storefront-Access-Token': process.env.REACT_APP_API_ACCESS_TOKEN,
         },
         body: JSON.stringify({
             query: `
