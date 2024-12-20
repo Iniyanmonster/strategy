@@ -2,31 +2,31 @@
     {
         "id":1,
         "name":"Brand",
-        "link":""
+        "link":"/"
     },{
         "id":3,
         "name":"Shopify",
-        "link":""
+        "link":"/shopify"
     },{
         "id":4,
         "name":"Products",
-        "link":""
+        "link":"/"
     },{
         "id":5,
         "name":"XR Store",
-        "link":""
+        "link":"/"
     },{
         "id":6,
         "name":"Analytics",
-        "link":""
+        "link":"/"
     },{
         "id":7,
         "name":"Billing",
-        "link":""
+        "link":"/"
     }
     ,{
         "id":8,
         "name":"Profile",
-        "link":""
+        "link":"/"
     }
 ]
